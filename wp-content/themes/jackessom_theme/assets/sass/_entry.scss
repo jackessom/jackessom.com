@@ -1,0 +1,28 @@
+.entry-title {
+	margin-top: 1.5em;
+}
+
+.recent-title {
+	display: block;
+}
+
+img.entry-header, 
+.entry-content img {
+	margin: 2em auto 3em;
+	display: block;
+}
+
+.sidebar {
+	@media (max-width: 641px) {
+		text-align: center;
+		border-top: 1px solid $lightGrey;
+		padding-top: $column-gutter/2;
+	}
+}
+
+.share {
+	i {
+		font-size: 3em;
+		margin-right: 10px;
+	}
+}

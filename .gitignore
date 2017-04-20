@@ -1,0 +1,36 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# sass
+wp-content/themes/jackessom_theme/.sass-cache
+wp-content/themes/jackessom_theme/.sass-cache/*
+
+# node
+wp-content/themes/jackessom_theme/assets/node_modules
+wp-content/themes/jackessom_theme/assets/node_modules/*
+
+# uploads
+wp-content/uploads
+
+# config
+wp-config.php

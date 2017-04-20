@@ -1,0 +1,32 @@
+$white: #ffffff;
+$black: #000000;
+$gold: #ffc800;
+$darkBlue: #15588b;
+$darkGrey: #2b2b2c;
+$midGrey: #959596;
+$lightGrey: #e7e7e7;
+
+p {
+	margin-top: 0;
+}
+
+figure {
+	margin: 1em 0;
+	max-width: 100%;
+	img {
+		max-width: 100%;
+	}
+}
+
+ul {
+	padding-left: 20px;
+}
+
+code {
+	display: block;
+	margin: 3em 0;
+	background: #302e2b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}

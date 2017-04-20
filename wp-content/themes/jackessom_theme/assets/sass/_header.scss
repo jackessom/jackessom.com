@@ -1,0 +1,59 @@
+.hero {
+	height: 600px;
+	min-height: 300px;
+	width: 100%;
+	overflow: hidden;
+	color: $white;
+	text-align: center;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+		z-index: 20;
+	}
+
+	.background {
+	    position: absolute;
+	    z-index: 10;
+	    //background: url('../images/heroBg.jpg');
+	    background-size: cover;
+	    height: 600px;
+	   	width: 100%;
+	   	top: 0;
+	   	left: 0;
+	}
+
+	.inner {
+		position: relative;
+		z-index: 30;
+		.site-title, p {
+			margin: 10% 0 0;
+		}
+		p {
+			margin: 10% auto 0;
+			//max-width: 600px;
+			word-wrap: break-word;
+		}
+
+		p a {
+			color: $gold;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.tweet-time {
+	display: inline-block;
+}
