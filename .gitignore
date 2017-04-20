@@ -31,6 +31,7 @@ wp-content/themes/jackessom_theme/assets/node_modules/*
 
 # uploads
 wp-content/uploads
+wp-content/uploads/*
 
 # config
 wp-config.php
