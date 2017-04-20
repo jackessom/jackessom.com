@@ -1,0 +1,39 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+#packery-container {
+	@media (max-width: 1000px) {
+		margin: 0 auto;
+		width: 80%;
+	}
+}
+
+.content-wrap {
+	position: relative;
+	z-index: 30;
+	background: $white;
+	margin-top: -5em;
+	margin-bottom: 100px;
+	padding: 0 0 15px;
+	transform:skew(0deg,3deg);
+	-ms-transform:skew(0deg,3deg); /* IE 9 */
+	-webkit-transform:skew(0deg,3deg); /* Safari and Chrome */
+}
+
+.site-content {
+	transform:skew(0deg,-3deg);
+	-ms-transform:skew(0deg,-3deg); /* IE 9 */
+	-webkit-transform:skew(0deg,-3deg); /* Safari and Chrome */
+	padding-bottom: 25px;
+}
+
+/*.row {
+	max-width: 75em;
+}*/
+
+.not-found {
+	text-align: center;
+}

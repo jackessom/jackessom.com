@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tin$ell Town</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+
+	<style type="text/css">
+		
+		@font-face {
+			font-family:'marker';
+			src: url(fonts/marker.ttf);
+			}
+		.custom_header {padding:0px; text-align:center; }
+		h2 {margin:0px; font-family:marker, Arial, Helvetica, sans-serif}
+		h5 {padding:0px; margin:0px; font-weight:200; }
+		
+	</style>
+</head>
+<body>
+
+<!-- HOME PAGE /-->
+
+	<div data-role="page" id="home">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Home</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+        <div data-role="navbar" data-theme='a'>
+        	<ul>
+            	<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+                <li><a href="#video">Video</a></li>
+        		<li><a href="#staff" data-role="button" data-transition="flip">Staff</a></li>
+        	</ul>
+		</div>    
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<h2>Welcome to the Tin$ell Town!</h2>
+			<p>Where Santa and His Elf's are working Hard on making all the little boys and girls of the world there christmas gifts. So come on down 		and pay him a visit!</p>
+			<p>We at Tinsel Town are Striving for your safety and have been fatality free since 2003.</p>
+		</div>
+        
+    <div data-role="footer">
+        <h5>&copy; 2011</h5>    
+	</div>
+</div>
+    
+   <!-- STAFF PAGE /-->  
+   
+    <div data-role="page" id="staff" data-theme='a'>
+    	<div data-role="header">
+        <h1>Staff</h1>
+        	<div class="custom_header">
+        		<a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        	</div>   
+		<div data-role="navbar" data-theme='a'>
+        	<ul>
+            	<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+       			<li><a href="#video" data-role="button" data-transition="flip">Video</a></li>
+        		<li><a href="#price" data-role="button">Prices</a></li>
+        	</ul>
+		</div>
+    </div>
+        <div data-role="content">
+        	
+		<ul data-role="listview" data-theme='a'>
+            	<li>
+            		<img src="images/mike.jpg" />
+                    <a href="#mike" data-rel="dialog" data-transition="slideup">Frank</a>
+            	</li>
+                <li>
+            		<img src="images/santa.png" />
+					<a href="#santa" data-rel="dialog" data-transition="slideup">Santa</a>
+            	</li>
+                <li>
+            		<img src="images/mum.jpg" />
+					<a href="#burger_staff" data-rel="dialog" data-transition="slideup">Laura</a>
+            	</li>
+                <li>
+            		<img src="images/nurse.png" />
+					<a href="#lammy" data-rel="dialog" data-transition="slideup">Nurse Lammy</a>
+            	</li>
+                 <li>
+            		<img src="images/security.png" />
+					<a href="#security" data-rel="dialog" data-transition="slideup">Carl</a>
+            	</li>
+                <li>
+            		<img src="images/steve.png" />
+					<a href="#steve" data-rel="dialog" data-transition="slideup">Steve</a>
+            	</li>
+            </ul>
+        </div>
+        <div data-role="footer">
+        <h5>&copy; 2011</h5>
+        </div>
+</div>
+
+    
+<!--Plan You Visit /-->
+    
+	<div data-role="page" id="plan">
+
+	<div data-role="header" data-theme='a'>
+    <h1>Plan Your Visit</h1>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> -->
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+        
+        <div data-role="navbar" data-theme='a'>
+        	<ul>
+            	<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+                <li><a href="#video" data-role="button">Video</a></li>
+        		<li><a href="#staff" data-role="button">Staff</a></li>
+        	</ul>
+		</div>
+          </div>
+    	<div data-role="content" data-theme='a'>
+            <ul>
+            <a href="#opening" data-role="button" data-theme="e">Opening times</a>
+            <a href="#attractions" data-role="button" data-theme="e">Attractions</a>
+            <a href="#price" data-role="button" data-theme="e">Prices</a>
+            </ul>
+		</div>   
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- OPENING TIMES PAGE /-->
+
+	<div data-role="page" id="opening">
+
+	<div data-role="header" data-theme='a'>
+    <h1>Opening times</h1>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> -->
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+        <div data-role="navbar" data-theme='a'>
+        	<ul>
+        		<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+                <li><a href="#video" data-role="button">Video</a></li>
+        		<li><a href="#staff" data-role="button" data-transition="slideup">Staff</a></li>
+        	</ul>
+		</div>    
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<h2>OPENING TIMES</h2>
+            <h5>Opening times may vary due to hangovers and court dates.</h5>
+            <p>MONDAY - FRIDAY 1pm-5pm</p>
+            <p>SATURDAY - 2pm-6pm</p>
+            <p>SUNDAY - You'll be lucky</p>
+            <h5>Open for Bank holidays if we can be bothered.</h5>
+            <h5>The Park will be closed from the 24th December to the 5th of January for Christmas.</h5>
+            <h5>From 1st July to 30th August, 5% off all tickets. (Only eligible tickets for under 3's.)</h5>
+		</div>
+        
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- Attractions /-->
+
+	<div data-role="page" id="attractions">
+
+	<div data-role="header" data-theme='a'>
+    <h1> Attractions</h1>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> -->
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+        <div data-role="navbar" data-theme='a'>
+        	<ul>
+        		<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+                <li><a href="#video" data-role="button">Video</a></li>
+        		<li><a href="#staff" data-role="button" data-transition="slideup">Staff</a></li>
+        	</ul>
+		</div>    
+	</div>
+    	<div data-role="content" data-theme='a'>
+        <ul data-role="listview" data-theme='a'>
+            	<li>
+            		<img src="images/ride.jpg" />
+                    <a href="#ride" data-rel="dialog" data-transition="slideup">Raindear Ride</a>
+            	</li>
+                <li>
+            		<img src="images/grotto.jpg" />
+                    <a href="#grotto" data-rel="dialog" data-transition="slideup">The Grotto</a>
+            	</li>
+                <li>
+            		<img src="images/nurse.png" />
+                    <a href="#lammy" data-rel="dialog" data-transition="slideup">Nurse Lammy</a>
+            	</li>
+                <li>
+            		<img src="images/burgers.jpg" />
+                    <a href="#burgerstall" data-rel="dialog" data-transition="slideup"> Burger Stall</a>
+            	</li>
+                <li>
+            		<img src="images/nativity_mobile.png" />
+                    <a href="#nativity" data-rel="dialog" data-transition="slideup">Nativity</a>
+            	</li>
+                 <li>
+            		<img src="images/sculpture.jpg" />
+                    <a href="#sculpture" data-rel="dialog" data-transition="slideup">COMING AUGUST</a>
+            	</li>
+                 <li>
+            		<img src="images/hanukkah.jpg" />
+                    <a href="#hanukkah" data-rel="dialog" data-transition="slideup">COMING SOON</a>
+            	</li>
+                
+        	</ul>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- Prices /-->
+
+	<div data-role="page" id="price" data-theme='a'>
+
+	<div data-role="header" data-theme='a'>
+    <h1> Prices</h1>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> -->
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+        <div data-role="navbar" data-theme='a'>
+        	<ul>
+        		<li><a href="#plan" data-role="button">Plan Your Visit</a></li>
+                <li><a href="#video" data-role="button">Video</a></li>
+        		<li><a href="#staff" data-role="button" data-transition="slideup">Staff</a></li>
+        	</ul>
+		</div>    
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<h2>Prices</h2>
+            <p>Adults Aged 7 and over - inc. VAT &pound;59.99</p>
+            <p>Children Under 7 - inc. VAT &pound;75.35</p>
+            <p>Senior - inc. VAT &pound;43.40</p>
+            <p>Disabled / Helper - inc. VAT &pound;101.10</p>
+            <p>*Can be hired out for private functions: Office Christmas Parties, Birthdays, Weddings and Bar Mitzvahs.</p>
+		</div>
+        
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- Burger Stall /-->
+
+	<div data-role="page" id="burgerstall">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Lauras Lush Caterin’</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/burger_ride.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>I offers a large selection of catering. Obvi we does burgers and shit, but we can also do hotdogs and the salad and stuffs to go on-it in-it, plus if the moneys right we got some special extras for the right price.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- Rain deer Ride /-->
+
+	<div data-role="page" id="ride">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Raindeer Ride</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/raindeer_ride.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Raindear Ride: Get To Ride Santa's Actual Raindear. (Due to Santa's Raindear being make believe we can not guarantee the species of animal.)</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+
+<!-- Grotto /-->
+
+	<div data-role="page" id="grotto">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>The Grotto</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/grotto_ride.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>The Grotto: All The Kids Are Dead Excited To Visit Santa. (Santa May Not Be Conscious.)</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+
+<!-- Sculpture /-->
+
+	<div data-role="page" id="sculpture">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Coming Soon</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Coming August-Don't Miss Our Ice Sculpture Exhibition!</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- Nativity /-->
+
+	<div data-role="page" id="nativity">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Coming Soon</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Come see our amazing nativity play!</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- coming soon Hanukkah/-->
+    
+	<div data-role="page" id="hanukkah">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Coming Soon</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/logo2.png" width="300" height="152"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Coming Next Christmas-Hanukkah Land and Islami-fun Town.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- STAFF -->
+
+	<!-- Mike --> 	
+
+		<div data-role="page" id="mike">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Frank</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/mike_staff.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>From chasing away unwated visitors to supplying our food stall with the best quality food, Frank is the park's head elf. He has a little problem with cows, his mother was killed by one, and hasn't yet really found his true self, hence the ever changing accent. He's a firm believer in Christmas and is a decent guy, unless your a cow.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+
+	<!-- Santa /-->
+
+		<div data-role="page" id="santa">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Santa</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/grotto_ride.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>With over 60 years experience in his profession, he has given his life to playing Santa, so come see him while he's still fresh. </p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+	<!-- Security /-->
+		
+		<div data-role="page" id="security">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Carl</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/security_staff.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>I'm not here because I want to be. This isn't my first choice of venue to protect. I do this for my uncle. It's nice to work with my family. I mean, I love them, they are my family. But I think I'll go postal if I have to celebrate Christmas much more. And the bloody hat is so itchy I have a permanent red rash across my forehead.  This is not my fist choice. I'm a professional.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+	<!-- Burger Seller /-->
+
+		<div data-role="page" id="burger_staff">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Laura</h1>
+    <div class="custom_header">
+        <a href="#burger_staff"><img src="images/burger_staff.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>I offers a large selection of catering. Obvi we does burgers and shit, but we can also do hotdogs and the salad and stuffs to go on-it in-it, plus if the money's right we got some special extras for the right price.</p>
+		</div>
+    <div data-role="footer" data-theme='a'>
+    	<h5>&copy; 2011</h5>
+	</div>
+</div>
+
+	<!-- Mike --> 	
+
+		<div data-role="page" id="steve">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Steve</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/steve_staff.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Steve has been working in the park for 3 years. He dedicates his time serving park goers and is sure to make your Christmas experience the best it can possibly be. He doubles up as a caretaker if ever you need one.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+	<!-- Nurse Lammy /-->
+
+		<div data-role="page" id="lammy">
+
+	<div data-role="header" data-theme='a'>
+    <!--<a href="linktowhatever.html" data-icon="delete">cancel</a> --><h1>Nurse Lammy</h1>
+    <div class="custom_header">
+        <a href="#home"><img src="images/nurse2.png" width="280" height="142"></a>
+        </div>
+         
+	</div>
+    	<div data-role="content" data-theme='a'>
+        	<p>Everyone Who Visits Tinsell Town Has To See Nurse Lammy.</p>
+		</div>
+    <div data-role="footer" data-theme="a">
+        <h5>&copy; 2011</h5>
+	</div>
+</div>
+
+<!-- VIDEO /-->
+
+<div data-role="page" id="video">
+<iframe width="320" height="212" src="http://www.youtube.com/embed/jdGMs8uy-vE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>

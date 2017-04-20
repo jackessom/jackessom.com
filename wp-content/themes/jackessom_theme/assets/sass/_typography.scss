@@ -1,0 +1,116 @@
+body {
+	font-family: 'Lustria', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+h1.site-title {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 5em;
+	line-height: 0.8em;
+	color: $white;
+	text-transform: uppercase;
+	@media (max-width: 520px) {
+		font-size: 3.5em;
+	}
+}
+
+a {
+	@include transition(all, 0.3s, ease-in);
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+}
+
+.entry-wrap a {
+	text-decoration: underline;
+	color: inherit;
+	@include transition(all, 0.1s, ease-in);
+
+	&:hover {
+		color: $darkBlue;
+	}
+}
+
+.filter-tagCloud a:hover {
+	text-decoration: underline;
+	color: $darkBlue;
+}
+
+.social-link {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	padding: 0 12px;
+}
+a.social-link {
+	&:hover {
+		color: $gold;
+		text-decoration: none;
+	}
+}
+
+.load-more-square {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	line-height: 0.8em;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+	content: "\e600";
+}
+
+.icon-google:before {
+	content: "\e601";
+}
+
+.icon-facebook:before {
+	content: "\e602";
+}
+
+.icon-twitter:before {
+	content: "\e603";
+}
+
+
+
+
+
+
+
