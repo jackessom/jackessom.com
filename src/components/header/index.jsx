@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './header.css';
 
@@ -11,7 +12,7 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  name: React.PropTypes.string,
+  name: PropTypes.string,
 };
 
 Header.defaultProps = {

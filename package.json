@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^5.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },

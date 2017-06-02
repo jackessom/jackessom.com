@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from 'components/header';
+import CodepenSection from 'containers/codepen';
 
 class App extends Component {
 
@@ -10,7 +11,10 @@ class App extends Component {
 
   render() {
     return (
-      <Header />
+      <div>
+        <Header />
+        <CodepenSection />
+      </div>
     );
   }
 }
