@@ -31,6 +31,7 @@
     "dotenv": "^4.0.0",
     "eslint": "^3.9.1",
     "eslint-config-airbnb": "^14.0.0",
+    "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-loader": "^1.6.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^3.0.2",
@@ -67,7 +68,15 @@
       "no-console": 0,
       "no-undef": 0,
       "linebreak-style": 0,
-      "react/forbid-prop-types": 0
+      "react/forbid-prop-types": 0,
+      "import/no-extraneous-dependencies": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "./configs/webpack.config.dev.js"
+        }
+      }
     },
     "globals": {
       "document": true

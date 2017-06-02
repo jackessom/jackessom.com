@@ -67,7 +67,9 @@ module.exports = {
     failOnError: true,
   },
   resolve: {
-    root: path.resolve('src'),
+    root: [
+      path.resolve(__dirname, '../src')
+    ],
     extensions: ['', '.js', '.jsx', '.json']
   },
 };
