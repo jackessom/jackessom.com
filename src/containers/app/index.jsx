@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
 import Header from 'components/header';
-import CodepenSection from 'containers/codepen';
+// import CodepenSection from 'containers/codepen';
+import Twitter from 'containers/twitter';
 
 class App extends Component {
 
   componentDidMount() {
-    console.log('test 2');
+    console.log('App mounted');
   }
 
   render() {
     return (
       <div>
         <Header />
-        <CodepenSection />
+        <Twitter />
       </div>
     );
   }

@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
+var Dotenv = require('dotenv-webpack');
 
 module.exports = {
   // Don't attempt to continue if there are any errors.
@@ -98,6 +99,7 @@ module.exports = {
       format: '  build [:bar] ' + ':percent' + ' (:elapsed seconds)',
       clear: false
     }),
+    new Dotenv()
   ],
   postcss: function (webpack) {
     return [
@@ -113,4 +115,9 @@ module.exports = {
     root: path.resolve('src'),
     extensions: ['', '.js', '.jsx', '.json']
   },
+  node: {
+    net: "empty",
+    tls: "empty",
+    fs: "empty"
+  }
 };

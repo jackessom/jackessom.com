@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var Dotenv = require('dotenv-webpack');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -13,11 +14,12 @@ module.exports = {
     publicPath: '/'
   },
   module: {
+    noParse: /node_modules\/ajv\/dist\/ajv.bundle.js/,
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
-        include: /src/
+        include: /src/,
       }
     ],
     loaders: [
@@ -32,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.json$/,
-        loader: 'json'
+        loader: 'json-loader'
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
@@ -54,7 +56,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: 'public/index.html'
-    })
+    }),
+    new Dotenv()
   ],
   postcss: function (webpack) {
     return [
@@ -70,6 +73,11 @@ module.exports = {
     root: [
       path.resolve(__dirname, '../src')
     ],
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['', '.js', '.jsx']
   },
+  node: {
+    net: "empty",
+    tls: "empty",
+    fs: "empty"
+  }
 };
