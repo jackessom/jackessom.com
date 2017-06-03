@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Header from 'components/header';
 // import CodepenSection from 'containers/codepen';
-import Twitter from 'containers/twitter';
+// import Twitter from 'containers/twitter';
+import Instagram from 'containers/instagram';
 
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Twitter />
+        <Instagram />
       </div>
     );
   }
